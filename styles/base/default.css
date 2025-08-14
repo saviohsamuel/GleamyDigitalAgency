@@ -1,1 +1,22 @@
 @import url('./reset.css');
+
+:root {
+    --bg-color: #000000;
+    --color-primary: #FFFFFF;
+    --color-secondary: #CBCBCB;
+    --color-highlight: #6F6F6F;
+    --color-emphasis: #FF7E21;
+    --stroke-initials: #363636;
+    --range-1: #FFFFFF;
+    --range-2: #212121;
+    --font-family-primary: "Poppins", sans-serif;
+    --font-family-secondary: "Roboto", sans-serif;
+}
+body {
+    background: var(--bg-color);
+    color: var(--color-primary);    
+    & a {
+        text-decoration: none;
+        color: var(--color-primary);
+    }
+}
