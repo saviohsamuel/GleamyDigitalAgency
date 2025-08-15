@@ -1,0 +1,82 @@
+#banner {
+    height: 100vh;    
+    overflow: hidden;    
+    position: relative;
+    & h2 {
+        font: var(--emphasis);
+        margin: 150px 290px;
+        position: relative;
+        span {
+            color: var(--color-highlight);
+        }
+        &::after {
+            content: "";
+            background: url('/imgs/icons/g.svg') no-repeat;
+            background-size: contain;
+            height: 200px;
+            width: 202px; 
+            position: absolute;           
+            top: 10px;
+            left: -50px;
+            z-index: -2;
+        }
+    }
+}
+.strap {        
+    width: 120%;
+    padding-block: 15px;
+    position: absolute;
+    overflow: hidden;    
+    & p {
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+.strap__wrapper {
+      display: flex;
+  overflow: hidden;
+}
+.strap1 {
+    background: var(--range-1);
+    top: 25%;
+    right: -35%;    
+    transform: rotate(41deg);
+    & p {
+        color: var(--range-2);
+    }  
+}
+.strap2 {    
+    background: var(--range-2);    
+    bottom: 25%;
+    left: -5%;
+    transform: rotate(-10deg);
+    & p {
+        color: var(--range-1);
+    }  
+}
+.strap__content {    
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 80px;        
+    animation: scroll 20s linear infinite;
+    & p {
+        display: flex;
+        align-items: center;
+        gap: 80px;       
+        & span {
+            display: inline-block;
+            width: 16px;
+            height: 17px;
+            border-radius: 50%;
+            background: var(--color-emphasis);
+        }
+    }    
+}
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-50%);
+    }
+}
