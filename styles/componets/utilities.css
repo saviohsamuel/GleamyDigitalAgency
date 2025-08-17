@@ -1,0 +1,67 @@
+.f-a-center {
+    align-items: center;
+}
+.f-j-center {
+    justify-content: center;
+}
+.f-d-column {
+    flex-direction: column;
+}
+.subtitle {
+    text-align: center;    
+    width: max-content;    
+    h2 {
+        text-transform: uppercase;
+        font: var(--subtitle);   
+        position: relative;
+        margin-bottom: 2.5rem;        
+        white-space: nowrap;
+        &::after {
+            content: "";
+            height: .0625rem;
+            width: 3.8125rem;
+            background: white;
+            position: absolute;
+            left: 0;
+            bottom: .5rem;
+        }
+    }
+    span {
+        position: relative;
+        display: inline-block;
+        height: 15.75rem;
+        width: 10.625rem;         
+        &::after {
+            content: "";
+            background: url('/imgs/icons/g.svg') no-repeat;
+            background-size: cover;
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+.rectangle::after {
+    content: "";
+    background: url('/imgs/icons/rectangle.svg') no-repeat;
+    background-size: cover;
+    width: 2.685625rem;
+    height: 2.068125rem;
+    position: absolute;            
+    z-index: -1;
+}
+.creative {
+    position: relative;
+    &::after {
+        content: "";
+        background: url('/imgs/icons/theCre8tive.svg') no-repeat;
+        background-size: contain;
+        height: 5rem;
+        width: 50rem;
+        position: absolute;
+        bottom: 2%;
+        left: -.9375rem;
+    }
+}

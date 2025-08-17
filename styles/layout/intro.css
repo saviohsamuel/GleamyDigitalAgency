@@ -1,21 +1,19 @@
-#intro {
+#intro {    
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;    
     & h1 {
-        text-indent: -9999px;
-        height: 56px;
-        width: 207px;
+        text-indent: -624.9375rem;
+        height: 3.5rem;
+        width: 12.9375rem;
         position: relative;            
         &::before {
             content: "";
             background: url('/imgs/icons/g.svg') no-repeat;                        
-            height: 378px;
-            width: 260px;
+            height: 23.625rem;
+            width: 16.25rem;
             position: absolute;            
-            top: -160px;
-            left: -30px;               
+            top: -10rem;
+            left: -1.875rem;               
             animation: intro 2.1s ease-in-out forwards;                    
         }
         &::after {

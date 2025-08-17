@@ -1,71 +1,47 @@
-#portfolio {    
-    height: 100vh;
+#portfolio {        
     display: flex;        
-    position: relative;        
-    &::after {
-        content: "";
-        background: url('/imgs/icons/theCre8tive.svg') no-repeat;
-        background-size: contain;
-        height: 80px;
-        width: 800px;
-        position: absolute;
-        bottom: 2%;
-        left: 40px;
-    }
-    h2 {
-        font: var(--subtitle);
-        position: relative;    
-        left: 13%;
-        top: -10%;
-        width: max-content;        
-        &::after {
-            content: "";
-            width: 80px;
-            height: 1px;
-            background: var(--color-primary);
-            position: absolute;
-            top: 60px;
-            left: 0;
+    position: relative;             
+    column-gap: 4.125rem;     
+    .subtitle {
+        h2 {
+            &::after {
+                left: .125rem;
+            }
         }
-    }
+        span {
+            height: 18.375rem;
+            width: 12.625rem;         
+            &::after {
+                background: url('/imgs/icons/p.svg') no-repeat;
+                background-size: cover;
+            }
+        }
+    }  
 }
 .portfolio__projects {
-    display: flex;
-    align-self: center;
-    margin-left: 200px;
-    gap: 32px;
-    position: relative;
-    &::before {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: -25%;
-        transform: translateY(-50%);
-        content: "";
-        background: url('/imgs/icons/p.svg') no-repeat;
-        background-size: contain;
-        width: 200px;
-        height: 260px;
-    }
-    figure {
+    display: flex;    
+    gap: 2rem;    
+    margin-top: 11rem;
+    figure {        
         img {
-            width: 300px;
-            height: 230px;
-            border-radius: 20px;
+            width: 15.625rem;
+            height: 11.25rem;
+            border-radius: 1.25rem;
         }
         figcaption {
+            text-align: center;
             span {
                 display: inline-block;
                 position: relative;
                 &::after {
                     content: "";
-                    width: 5px;
-                    height: 5px;
+                    width: .3125rem;
+                    height: .3125rem;
                     background: var(--color-emphasis);
                     border-radius: 50%;
                     position: absolute;
-                    top: 10px;
-                    left: -10px;
+                    top: .625rem;
+                    left: -.625rem;
                 }
             }
         }

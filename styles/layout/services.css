@@ -1,59 +1,33 @@
 #services {   
-    position: relative;     
-    height: 100vh;
+    position: relative;         
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h2 {
-        font: var(--subtitle);
-        position: relative;    
-        left: 13%;
-        top: -10%;
-        width: max-content;        
-        &::after {
-            content: "";
-            width: 80px;
-            height: 1px;
-            background: var(--color-primary);
-            position: absolute;
-            bottom: 10px;
-            left: 0;
+    column-gap: 4.125rem;        
+    .subtitle {
+        h2 {
+            &::after {
+                left: .425rem;
+            }
         }
-    }
-    &::after {
-        content: "";
-        background: url('/imgs/icons/theCre8tive.svg') no-repeat;
-        background-size: contain;
-        height: 80px;
-        width: 800px;
-        position: absolute;
-        bottom: 2%;
-        left: 40px;
-    }
+        span {
+            height: 16.375rem;
+            width: 12.3125rem;         
+            &::after {
+                background: url('/imgs/icons/s.svg') no-repeat;
+            }
+        }
+    }    
 }
 .services__container {
     display: flex;
-    gap: 32px;
-    position: relative; 
-    margin-left: 400px;
-    &::before {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: -25%;
-        transform: translateY(-50%);
-        content: "";
-        background: url('/imgs/icons/s.svg') no-repeat;
-        background-size: contain;
-        width: 200px;
-        height: 260px;
-    }
+    gap: 2rem;
+    position: relative;                 
+    margin-top: 11.25rem;
 }
 .services__content {    
-    width: 250px;
+    width: 15.625rem;
     p {
-        font-size: 12px;
-        margin-block: 16px;
+        font-size: .75rem;
+        margin-block: 1rem;
     }
 }
 .brand {
@@ -62,10 +36,10 @@
         content: "";
         background: url('/imgs/icons/rectangle.svg') no-repeat;
         background-size: cover;
-        width: 42.97px;
-        height: 33.09px;
+        width: 2.685625rem;
+        height: 2.068125rem;
         position: absolute;            
-        bottom: -6px;
+        bottom: -.375rem;
         left: 30%;
         z-index: -1;
     }

@@ -1,5 +1,4 @@
 @import url('./reset.css');
-
 :root {
     --bg-color: #000000;
     --color-primary: #FFFFFF;
@@ -12,15 +11,32 @@
     --font-family-primary: "Poppins", sans-serif;
     --font-family-secondary: "Roboto", sans-serif;
     --font-default: 400 1rem var(--font-family-primary);
-    --emphasis: 400 2.625rem/170% var(--font-family-primary);
-    --subtitle: 400 2.5rem/190% var(--font-family-primary);
+    --emphasis: 700 2.625rem/170% var(--font-family-primary);
+    --subtitle: 600 2.5rem/190% var(--font-family-primary);
 }
 body {
     background: var(--bg-color);
     color: var(--color-primary);        
-    font: var(--font-default);
+    font: var(--font-default);    
+    &::-webkit-scrollbar {    
+        width: .5rem;
+        height: .75rem;
+    }    
+    &::-webkit-scrollbar-track {
+        background: var(--color-secondary);
+        border-radius: .625rem;
+    }    
+    &::-webkit-scrollbar-thumb {
+        background: var(--color-emphasis);
+        border-radius: .625rem;
+    }
     & a {
         text-decoration: none;
         color: var(--color-primary);
     }    
+} 
+section + section {
+    height: 100vh;
+    padding-block: 2rem;        
+    margin-top: 2rem;
 }

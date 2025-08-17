@@ -1,10 +1,11 @@
-#banner {
-    height: 100vh;    
-    overflow: hidden;    
+#banner {        
+    overflow: hidden;
     position: relative;
-    & h2 {
+    display: flex;    
+    height: 100vh;
+    h2 {
         font: var(--emphasis);
-        margin: 150px 290px;
+        margin-left: 21.875rem;
         position: relative;
         span {
             color: var(--color-highlight);
@@ -13,18 +14,17 @@
             content: "";
             background: url('/imgs/icons/g.svg') no-repeat;
             background-size: contain;
-            height: 200px;
-            width: 202px; 
+            height: 12.625rem;
+            width: 12.625rem; 
             position: absolute;           
-            top: 10px;
-            left: -50px;
-            z-index: -2;
+            top: .625rem;
+            left: -3.75rem;    
+            z-index: -1;        
         }
     }
 }
-.strap {        
-    width: 120%;
-    padding-block: 15px;
+.strap {            
+    padding-block: .9375rem;
     position: absolute;
     overflow: hidden;    
     & p {
@@ -32,41 +32,38 @@
         white-space: nowrap;
     }
 }
-.strap__wrapper {
-      display: flex;
-  overflow: hidden;
-}
 .strap1 {
-    background: var(--range-1);
-    top: 25%;
-    right: -35%;    
+    width: 62.5rem;
+    background: var(--range-1);    
+    top: 40%;
+    right: -19%;    
     transform: rotate(41deg);
     & p {
         color: var(--range-2);
     }  
 }
 .strap2 {    
+    width: 96.875rem;
     background: var(--range-2);    
     bottom: 25%;
-    left: -5%;
+    left: -2%;
     transform: rotate(-10deg);
     & p {
         color: var(--range-1);
     }  
 }
 .strap__content {    
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 80px;        
+    display: flex;    
+    gap: 5rem;        
     animation: scroll 20s linear infinite;
-    & p {
+    p {
         display: flex;
         align-items: center;
-        gap: 80px;       
-        & span {
+        gap: 5rem;       
+        span {
             display: inline-block;
-            width: 16px;
-            height: 17px;
+            width: 1rem;
+            height: 1.0625rem;
             border-radius: 50%;
             background: var(--color-emphasis);
         }
