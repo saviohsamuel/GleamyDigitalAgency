@@ -65,3 +65,15 @@
         left: -.9375rem;
     }
 }
+@media screen and (max-width: 480px) {    
+    .subtitle {               
+        span {
+            display: none;
+        }
+    }
+    .creative {
+        &::after {
+            display: none;
+        }
+    }
+}

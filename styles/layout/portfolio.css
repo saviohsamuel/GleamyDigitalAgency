@@ -47,3 +47,13 @@
         }
     }
 }
+@media screen and (max-width: 480px) {
+    #portfolio {                
+        flex-direction: column;
+    }
+    .portfolio__projects {
+        flex-direction: column;  
+        margin-top: 0;  
+        padding-bottom: 3rem;           
+    }
+}

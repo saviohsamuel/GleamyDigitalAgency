@@ -63,6 +63,7 @@
 }
 .fixed__btn {
     position: fixed;
+    z-index: 2;
 }
 .btn__circle {    
     border-radius: 50%;    
@@ -147,5 +148,18 @@
     100% {
         transform: translate(-50%, -50%)
         rotate(270deg);
+    }
+}
+@media screen and (max-width: 480px) {
+    .areas__acting {
+        left: .3rem;
+        transform: translateY(-40%);
+    }   
+    .fixed__btn-gleamy {        
+        display: none;
+    }
+    .fixed__btn-video {        
+        bottom: 2rem;
+        right: 1rem;
     }
 }

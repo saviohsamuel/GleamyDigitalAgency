@@ -40,3 +40,12 @@ section + section {
     padding-block: 2rem;        
     margin-top: 2rem;
 }
+@media screen and (max-width: 480px) {
+    section + section {
+        margin-top: 1rem;
+    }
+    :root {
+        --emphasis: 700 1.5rem/170% var(--font-family-primary);
+    }
+    
+}

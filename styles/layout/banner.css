@@ -77,3 +77,24 @@
         transform: translate(-50%);
     }
 }
+@media screen and (max-width: 480px) {
+    #banner {
+        height: 40vh;
+        padding: 5rem 1rem 0;
+        flex-direction: column;         
+        h2 {
+            margin-inline: 1rem;
+            &::after  {
+                top: -2rem;
+                left: 9rem;                
+            }
+        }
+    }
+    .strap1 {
+        display: none;
+    }
+    .strap2 {        
+        left: -5%;
+        bottom: 40%;
+    }
+}

@@ -42,3 +42,13 @@
         transform: scale(1);       
     }
 }
+@media screen and (max-width: 480px) {
+    #intro {                
+        & h1 {
+            &::before {
+                background-size: contain;     
+                width: 15.25rem;         
+            }
+        }
+    }
+}

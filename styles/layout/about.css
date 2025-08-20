@@ -23,3 +23,13 @@
         right: 11%;        
     }
 }
+@media screen and (max-width: 480px) {
+    #about {        
+        height: 70vh;
+        flex-direction: column; 
+    }
+    .about__content {        
+        width: 85%;
+        font-size: 1rem;                
+    }
+}
